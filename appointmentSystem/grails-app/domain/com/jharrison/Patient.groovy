@@ -8,6 +8,9 @@ Date patientDob
 int patientID
 Date dateRegistered
 int patientPhone
+static hasMany = [surgeries:Surgery, doctor:Doctor, prescription:Prescription]
+static belongsTo = Surgery 
+static hasOne = [appointment:Appointment]
 
     static constraints = {
 	patientName blank: false, nullable: false

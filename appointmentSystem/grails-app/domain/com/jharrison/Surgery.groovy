@@ -8,6 +8,11 @@ int telephone
 int numberOfPatients
 String description
 String openingTime
+static hasMany = [receptionists:Receptionist, doctors:Doctor, nurses:Nurse, appointments:Appointment, patients:Patient]
+
+String toString(){
+	return name
+}
 
     static constraints = {
 	name blank: false, nullable: false
