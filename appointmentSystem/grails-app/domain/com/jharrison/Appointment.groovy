@@ -5,9 +5,11 @@ Date appDate
 String appTime
 int appDuration
 int roomNumber
+Surgery surgery
+Patient patient
 static hasMany = [surgery:Surgery]
-static belongsTo = Surgery
-static hasOne = [doctor:Doctor, patient:Patient]
+static belongsTo = Patient
+static hasOne = [doctor:Doctor]
 
     static constraints = {
 	appDate blank: false, nullable: false

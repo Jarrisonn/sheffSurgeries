@@ -1,14 +1,15 @@
 package com.jharrison
 
 class Doctor {
-	String fullName
-	String qualification
-	String position
-	String doctorEmail
-	String password
-	int doctorOffice
-	int doctorPhone
-	String bio
+String fullName
+String qualification
+String position
+String doctorEmail
+String password
+int doctorOffice
+int doctorPhone
+String bio
+Surgery surgery
 static hasMany = [prescriptions:Prescription, patients:Patient, nurses:Nurse, appointments:Appointment]
 static hasOne = [surgery:Surgery]
 

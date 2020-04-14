@@ -6,6 +6,8 @@ String qualifications
 String nurseEmail
 int nurseOffice
 int nursePhone
+Surgery surgery
+Doctor doctor
 static hasMany = [doctor:Doctor]
 static hasOne = [surgery:Surgery]
 

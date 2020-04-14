@@ -1,4 +1,4 @@
-package appointmentsystem
+package com.jharrison
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration

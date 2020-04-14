@@ -7,6 +7,7 @@ String medicine
 Float totalCost
 Date dateIssued
 Boolean patientPaying
+Doctor doctor
 static hasOne = [doctor:Doctor]
 
     static constraints = {
