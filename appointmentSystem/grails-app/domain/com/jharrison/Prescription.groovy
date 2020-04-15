@@ -10,6 +10,9 @@ Boolean patientPaying
 Doctor doctor
 static hasOne = [doctor:Doctor]
 
+String toString(){
+	return medicine
+}
     static constraints = {
 	pharmacyName blank: false, nullable: false
 	prescripNumber blank: false, nullable: false

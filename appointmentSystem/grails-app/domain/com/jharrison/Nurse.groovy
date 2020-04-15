@@ -11,6 +11,9 @@ Doctor doctor
 static hasMany = [doctor:Doctor]
 static hasOne = [surgery:Surgery]
 
+String toString(){
+	return nurseName
+}
     static constraints = {
 	nurseName blank: false, nullable: false
 	qualifications blank: false, nullable: false

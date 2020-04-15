@@ -9,6 +9,10 @@ int recepPhone
 Surgery surgery
 static hasOne = [surgery:Surgery]
 
+String toString(){
+	return recepName
+}
+
     static constraints = {
 	recepName blank: false, nullable: false
 	recepEmail blank: false, nullable: false

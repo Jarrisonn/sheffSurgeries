@@ -9,10 +9,14 @@ int patientID
 Date dateRegistered
 int patientPhone
 Surgery surgery
+Appointment appointment
+static hasOne =[appointment:Appointment]
 static hasMany = [surgery:Surgery, prescriptions:Prescription]
 static belongsTo = Surgery
 
-
+String toString(){
+	return patientName
+}
 
 
     static constraints = {

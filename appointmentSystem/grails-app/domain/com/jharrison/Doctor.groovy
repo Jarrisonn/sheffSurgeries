@@ -13,6 +13,10 @@ Surgery surgery
 static hasMany = [prescriptions:Prescription, patients:Patient, nurses:Nurse, appointments:Appointment]
 static hasOne = [surgery:Surgery]
 
+String toString(){
+	return fullName
+}
+
 
     static constraints = {
 	fullName blank: false, nullable: false
